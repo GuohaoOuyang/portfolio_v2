@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Row, Col } from "antd";
+import { Typography, Row, Col, Button } from "antd";
 import styled from "styled-components";
 import bg from "../images/mockup.png";
 
@@ -40,6 +40,52 @@ const ReviewSection = () => {
 
   const Heading = styled(Col)`
     margin: 50px 100px;
+  `;
+
+  const Footer = styled(Col)`
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+  `;
+
+  const CVButton = styled(Button)`
+    position: relative;
+    transition: color 0.2s ease;
+    border: 2px solid rgba(79, 79, 79, 0.7);
+    background: transparent;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    line-height: auto !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    : hover {
+      background: transparent;
+    }
+    span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    span: after {
+      content: "\\20D7";
+      position: absolute;
+      opacity: 0;
+      font-size: 2em;
+      top: 0.6rem;
+      right: -0.4em;
+      transition: 0.5s;
+    }
+    :hover span {
+      transform: translate3d(-0.5em, 0, 0);
+    }
+    :hover span: after {
+      opacity: 1;
+      right: -0.8em;
+    }
   `;
 
   return (
@@ -112,6 +158,23 @@ const ReviewSection = () => {
             lives better
           </Text>
         </Col>
+      </Row>
+      <Row>
+        <Footer
+          data-aos="fade-in"
+          data-aos-duration="500"
+          data-aos-delay="500"
+          data-aos-easing="ease"
+          xs={24}
+        >
+          <CVButton
+            href="https://drive.google.com/file/d/1_JMEwDQHas7S8yROVxxTiWm8eycQpIIi/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>View Resume</span>
+          </CVButton>
+        </Footer>
       </Row>
       <ReviewContainer></ReviewContainer>
     </>

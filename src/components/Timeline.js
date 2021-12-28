@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const TimelineSection = () => {
   const StyleTimeline = styled(Timeline)`
-    background: linear-gradient(54deg, #9164ff, #8bfff4);
+    background: linear-gradient(to bottom, #c2e59c, #64b3f4);
     position: relative;
     // padding-bottom: 1000px;
     li {
@@ -58,10 +58,11 @@ const TimelineSection = () => {
       border-radius: 5px;
       time {
         position: absolute;
-        background: #f5af19;
+        background: #F4A564;
         width: 80px;
         height: 30px;
         top: -15px;
+        font-family: 'Roboto', sans-serif;
         border-radius: 5px;
         display: flex;
         justify-content: center;
