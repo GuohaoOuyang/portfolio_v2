@@ -63,6 +63,7 @@ const ReviewSection = () => {
     align-items: center;
     : hover {
       background: transparent;
+      color: #64B3F4;
     }
     span {
       cursor: pointer;
@@ -81,10 +82,12 @@ const ReviewSection = () => {
     }
     :hover span {
       transform: translate3d(-0.5em, 0, 0);
+      color: #64B3F4;
     }
     :hover span: after {
       opacity: 1;
       right: -0.8em;
+      color: #64B3F4;
     }
   `;
 
@@ -120,8 +123,7 @@ const ReviewSection = () => {
             I do
           </Title>
           <Text style={{ textAlign: "center" }}>
-            UI/UX design, create prototype, web, desktop and mobile app
-            development, responsive design.
+            Designed and prototyped web-based, desktop, and mobile applications, implemented solutions using modern architectures
           </Text>
         </Col>
         <Col
@@ -137,8 +139,7 @@ const ReviewSection = () => {
             I sepcialize
           </Title>
           <Text style={{ textAlign: "center" }}>
-            CSS, Figma, frontend framework like vue and react, various UI
-            framework, Git, project management
+            Problem solving and analytical thinking. Tools including Git, Docker, modern frontend frameworks and css framekworks
           </Text>
         </Col>
         <Col
@@ -154,8 +155,7 @@ const ReviewSection = () => {
             I appreciate
           </Title>
           <Text style={{ textAlign: "center" }}>
-            cultural diversity, challenged to grow product that makes people's
-            lives better
+            Positive workplace culture, enough challenges and opportunities for growth and good coding standards and practices
           </Text>
         </Col>
       </Row>

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://guohaoouyang.github.io/portfolio_v2/",
   "name": "portfolio_v2",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "antd": "^4.17.3",
     "aos": "^3.0.0-beta.6",
     "craco-less": "^1.20.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
@@ -23,6 +25,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
