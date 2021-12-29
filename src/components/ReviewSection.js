@@ -50,7 +50,7 @@ const ReviewSection = () => {
 
   const CVButton = styled(Button)`
     position: relative;
-    transition: color 0.2s ease;
+    transition: color 0.5s ease;
     border: 2px solid rgba(79, 79, 79, 0.7);
     background: transparent;
     height: 50px;
@@ -64,6 +64,7 @@ const ReviewSection = () => {
     : hover {
       background: transparent;
       color: #64B3F4;
+      border-color: #64B3F4;
     }
     span {
       cursor: pointer;
