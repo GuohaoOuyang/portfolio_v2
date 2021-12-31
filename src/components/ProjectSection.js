@@ -81,7 +81,7 @@ const ProjectSection = () => {
   const { Text } = Typography;
 
   return (
-    <ProjectContainer justify="center" align="middle" gutter={[8, 8]}>
+    <ProjectContainer justify="center" align="middle" gutter={[8, 8]} id="projects">
       <Col lg={6} xs={16}>
         <Row gutter={[0, 8]}>
           <LeftSm1
@@ -110,9 +110,9 @@ const ProjectSection = () => {
             data-aos-anchor-placement="top-bottom"
           >
             <a
-              href="https://mip.staging.fyelabs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#projects"
+              // target="_blank"
+              // rel="noopener noreferrer"
             >
               <Text>MIP</Text>
             </a>
@@ -130,9 +130,9 @@ const ProjectSection = () => {
             data-aos-anchor-placement="top-bottom"
           >
             <a
-              href="https://www.yasholding.ae/nebras-education-holding/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#projects"
+              // target="_blank"
+              // rel="noopener noreferrer"
             >
               <Text>Nebras</Text>
             </a>

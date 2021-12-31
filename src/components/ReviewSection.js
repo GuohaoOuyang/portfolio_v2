@@ -1,7 +1,7 @@
-import React from "react";
-import { Typography, Row, Col, Button } from "antd";
-import styled from "styled-components";
-import bg from "../images/mockup.png";
+import React from 'react'
+import { Typography, Row, Col, Button } from 'antd'
+import styled from 'styled-components'
+import bg from '../images/mockup.png'
 
 const ReviewSection = () => {
   const ReviewContainer = styled.div`
@@ -9,7 +9,7 @@ const ReviewSection = () => {
     z-index: 0;
     min-height: 100vh;
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: -1;
       top: 0;
@@ -25,28 +25,28 @@ const ReviewSection = () => {
       );
       mask-image: linear-gradient(to bottom, transparent 10%, black 75%);
     }
-  `;
-  const { Title, Text } = Typography;
+  `
+  const { Title, Text } = Typography
   const TitleOverlay = styled(Title)`
     padding: 10px 0;
     text-align: center;
     margin-bottom: 0 !important;
     font-weight: 600;
-  `;
+  `
 
   const Intro = styled(Text)`
     text-align: center;
-  `;
+  `
 
   const Heading = styled(Col)`
     margin: 50px 100px;
-  `;
+  `
 
   const Footer = styled(Col)`
     margin: 50px 0px;
     display: flex;
     justify-content: center;
-  `;
+  `
 
   const CVButton = styled(Button)`
     position: relative;
@@ -61,10 +61,15 @@ const ReviewSection = () => {
     padding-right: 20px;
     justify-content: center;
     align-items: center;
-    : hover {
+    :focus {
       background: transparent;
-      color: #64B3F4;
-      border-color: #64B3F4;
+      color: black;
+      border-color: rgba(79, 79, 79, 0.7);
+    }
+    :hover  {
+      background: transparent;
+      color: #64b3f4;
+      border-color: #64b3f4;
     }
     span {
       cursor: pointer;
@@ -73,7 +78,7 @@ const ReviewSection = () => {
       transition: 0.5s;
     }
     span: after {
-      content: "\\20D7";
+      content: '\\20D7';
       position: absolute;
       opacity: 0;
       font-size: 2em;
@@ -83,23 +88,23 @@ const ReviewSection = () => {
     }
     :hover span {
       transform: translate3d(-0.5em, 0, 0);
-      color: #64B3F4;
+      color: #64b3f4;
     }
     :hover span: after {
       opacity: 1;
       right: -0.8em;
-      color: #64B3F4;
+      color: #64b3f4;
     }
-  `;
+  `
 
   return (
     <>
-      <Row justify="center">
+      <Row justify='center'>
         <Heading
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="200"
-          data-aos-easing="ease"
+          data-aos='fade-up'
+          data-aos-duration='1000'
+          data-aos-offset='200'
+          data-aos-easing='ease'
           xs={15}
         >
           <TitleOverlay>About Me</TitleOverlay>
@@ -110,68 +115,71 @@ const ReviewSection = () => {
           </Intro>
         </Heading>
       </Row>
-      <Row justify="center" align="top" gutter={16}>
+      <Row justify='center' align='top' gutter={16}>
         <Col
           lg={5}
           xs={16}
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="400"
-          data-aos-easing="ease"
-          data-aos-anchor-placement="top-bottom"
+          data-aos='fade-up'
+          data-aos-duration='1000'
+          data-aos-delay='400'
+          data-aos-easing='ease'
+          data-aos-anchor-placement='top-bottom'
         >
-          <Title level={5} style={{ textAlign: "center" }}>
+          <Title level={5} style={{ textAlign: 'center' }}>
             I do
           </Title>
-          <Text style={{ textAlign: "center" }}>
-            Designed and prototyped web-based, desktop, and mobile applications, implemented solutions using modern architectures
+          <Text style={{ textAlign: 'center' }}>
+            Designed and prototyped web-based, desktop, and mobile applications,
+            implemented solutions using modern architectures
           </Text>
         </Col>
         <Col
           lg={5}
           xs={16}
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="450"
-          data-aos-easing="ease"
-          data-aos-anchor-placement="top-bottom"
+          data-aos='fade-up'
+          data-aos-duration='1000'
+          data-aos-delay='450'
+          data-aos-easing='ease'
+          data-aos-anchor-placement='top-bottom'
         >
-          <Title level={5} style={{ textAlign: "center" }}>
+          <Title level={5} style={{ textAlign: 'center' }}>
             I sepcialize
           </Title>
-          <Text style={{ textAlign: "center" }}>
-            Problem solving and analytical thinking. Tools including Git, Docker, modern frontend frameworks and css framekworks
+          <Text style={{ textAlign: 'center' }}>
+            Problem solving and analytical thinking. Tools including Git,
+            Docker, modern frontend frameworks and css framekworks
           </Text>
         </Col>
         <Col
           lg={5}
           xs={16}
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-          data-aos-easing="ease"
-          data-aos-anchor-placement="top-bottom"
+          data-aos='fade-up'
+          data-aos-duration='1000'
+          data-aos-delay='500'
+          data-aos-easing='ease'
+          data-aos-anchor-placement='top-bottom'
         >
-          <Title level={5} style={{ textAlign: "center" }}>
+          <Title level={5} style={{ textAlign: 'center' }}>
             I appreciate
           </Title>
-          <Text style={{ textAlign: "center" }}>
-            Positive workplace culture, enough challenges and opportunities for growth and good coding standards and practices
+          <Text style={{ textAlign: 'center' }}>
+            Positive workplace culture, enough challenges and opportunities for
+            growth and good coding standards and practices
           </Text>
         </Col>
       </Row>
       <Row>
         <Footer
-          data-aos="fade-in"
-          data-aos-duration="500"
-          data-aos-delay="500"
-          data-aos-easing="ease"
+          data-aos='fade-in'
+          data-aos-duration='500'
+          data-aos-delay='500'
+          data-aos-easing='ease'
           xs={24}
         >
           <CVButton
-            href="https://drive.google.com/file/d/1_JMEwDQHas7S8yROVxxTiWm8eycQpIIi/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://drive.google.com/file/d/1I-wiPTK_4-t8F9WEQUweSvh_znsZfkJS/view?usp=sharing'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <span>View Resume</span>
           </CVButton>
@@ -179,7 +187,7 @@ const ReviewSection = () => {
       </Row>
       <ReviewContainer></ReviewContainer>
     </>
-  );
-};
+  )
+}
 
-export default ReviewSection;
+export default ReviewSection
